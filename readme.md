@@ -8,6 +8,7 @@ Before patch:
 After patch:
 <img width="3840" height="2160" alt="202608~3" src="https://github.com/user-attachments/assets/b4c5153a-b119-435a-85f1-3b2d2c6fe360" />
 
+This patch was vibe coded.
 
 ## Install
 
