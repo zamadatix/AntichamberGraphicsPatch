@@ -9,7 +9,7 @@ Adds every resolution reported by the active display to Antichamber's graphics s
 3. Open PowerShell in this folder and run:
 
 ```powershell
-.\dist\AntichamberGraphicsPatch.exe "<Antichamber folder>" --install
+.\AntichamberGraphicsPatch.exe "<Antichamber folder>" --install
 ```
 
 Launch the game normally. On the graphics options wall, use **LAST** and **NEXT** to browse the detected resolutions.
@@ -17,12 +17,10 @@ Launch the game normally. On the graphics options wall, use **LAST** and **NEXT*
 ## Check or remove
 
 ```powershell
-.\dist\AntichamberGraphicsPatch.exe "<Antichamber folder>" --check
-.\dist\AntichamberGraphicsPatch.exe "<Antichamber folder>" --remove
+.\AntichamberGraphicsPatch.exe "<Antichamber folder>" --check
+.\AntichamberGraphicsPatch.exe "<Antichamber folder>" --remove
 ```
 
-`--check` reports compatibility and installation state. `--remove` performs the normal verified removal. If `UDK.exe` needs recovery, use `--unpatch` instead; it removes the patch only after parity recovery reproduces the verified original file.
+`--check` reports compatibility and installation state. `--remove` removes the patches and restores the game files to their original state. The installer refuses unrecognized game files. It keeps recovery copies and saved graphics preferences when removing the patch.
 
-The installer refuses unrecognized game files. It keeps recovery copies and saved graphics preferences when removing the patch. If the UDK 3 license was already accepted, installation also repairs the stale acceptance record that can cause the Accept/Deny prompt to reappear.
-
-The executable is not digitally signed, so Windows may identify its publisher as unknown. If Windows reports an access error, reopen PowerShell as Administrator.
+You may need to run this executable as administrator depending on your file location. Windows Defender may flag the executable as it is unsigned and modifies another program, requiring you to exclude it from scanning.
