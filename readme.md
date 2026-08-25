@@ -1,6 +1,6 @@
 # Antichamber Graphics Patch
 
-Adds every resolution reported by the active display to Antichamber's graphics settings. A new configuration starts at the desktop resolution, the replacement resolution labels are enlarged, and the game's original fullscreen and windowed controls remain unchanged.
+Adds every resolution reported by the active display to Antichamber's graphics settings. Also makes the initial resolution match the desktop resolution rather than defaulting to the lowest setting.
 
 Before patch:
 <img width="1280" height="720" alt="202608~1" src="https://github.com/user-attachments/assets/22fb9fe1-2026-415c-a11a-805e9504db72" />
